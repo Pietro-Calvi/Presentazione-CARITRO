@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Cognome — Candidatura Commissione Giovani Caritro</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="110">
+
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="brand-dot"></span> Pietro Calvi
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Apri menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#luoghi">Luoghi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#passioni">Passioni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lavoro">Lavoro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
+                    <li class="nav-item"><a class="nav-link btn-nav-cta ms-lg-2" href="#e-ora">E ora?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section py-5">
+        <div class="container py-lg-3">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-extrabold mb-3">
+                        Ciao, sono <span class="text-highlight">Pietro</span>.<br>
+                        Mi racconto in 4 dimensioni.
+                    </h1>
+                    <p class="lead text-secondary mb-4">
+                        Ho 22 anni, mi sono laureato in Informatica a Trento, dove vivo. Ho costruito questa pagina per
+                        presentarmi fuori dagli schemi di un classico CV: attraverso i luoghi che mi hanno cresciuto,
+                        ciò che mi appassiona, il lavoro sul campo e il mio percorso di studi.
+                        Questo è tutto ciò che, insieme alle persone con cui ho condiviso questi aspetti, mi ha reso chi sono oggi.
+                        Ll'ultima sezione di questa pagina invece, spiega cosa voglio aggiungere a ciò che 
+                        viene descritto precedentemente e perchè lo vorrei fare con questa candidatura.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#luoghi" class="btn btn-primary-custom btn-lg">
+                            Esplora il profilo <i class="bi bi-arrow-down-short"></i>
+                        </a>
+                        <a href="#e-ora" class="btn btn-outline-custom btn-lg">
+                            Vai al "E ora?"
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <div class="hero-photo-wrapper mx-auto">
+                        <img src="img/profilo.jpg"
+                            onerror="this.src='https://placehold.co/600x640/0d5c75/ffffff?text=La+tua+foto+migliore'"
+                            alt="Foto profilo Nome Cognome" class="img-fluid hero-photo">
+                        <div class="floating-tag">
+                            <i class="bi bi-code-slash text-accent"></i> Scritto a mano con HTML, CSS &amp; Bootstrap
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container pb-5">
+        <section id="luoghi" class="area-section">
+            <div class="area-header mb-3">
+                <span class="area-number">01</span>
+                <div>
+                    <span class="area-kicker">Seleziona una tappa</span>
+                    <h2 class="area-title">Luoghi</h2>
+                </div>
+            </div>
+
+            <div class="nav nav-pills row g-2 g-md-3 mb-4 big-topic-tabs" id="luoghiTab" role="tablist">
+                <div class="col-4">
+                    <button class="nav-link active w-100 big-tab-btn" id="tab-spotorno" data-bs-toggle="pill"
+                        data-bs-target="#pane-spotorno" type="button" role="tab" aria-controls="pane-spotorno"
+                        aria-selected="true">
+                        <i class="bi bi-water big-tab-icon"></i>
+                        <span class="big-tab-title">Spotorno</span>
+                        <span class="big-tab-sub d-none d-sm-block">Casa e radici</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="nav-link w-100 big-tab-btn" id="tab-savona" data-bs-toggle="pill"
+                        data-bs-target="#pane-savona" type="button" role="tab" aria-controls="pane-savona"
+                        aria-selected="false">
+                        <i class="bi bi-building big-tab-icon"></i>
+                        <span class="big-tab-title">Savona</span>
+                        <span class="big-tab-sub d-none d-sm-block">Nuovi orizzonti</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="nav-link w-100 big-tab-btn" id="tab-trento" data-bs-toggle="pill"
+                        data-bs-target="#pane-trento" type="button" role="tab" aria-controls="pane-trento"
+                        aria-selected="false">
+                        <i class="bi bi-triangle big-tab-icon"></i>
+                        <span class="big-tab-title">Trento</span>
+                        <span class="big-tab-sub d-none d-sm-block">Il presente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="luoghiTabContent">
+
+                <!-- TAB 1.1: SPOTORNO -->
+                <div class="tab-pane fade show active" id="pane-spotorno" role="tabpanel" aria-labelledby="tab-spotorno" tabindex="0">
+                    <div id="carouselSpotorno" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+                
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Spotorno1.jpeg"
+                                            onerror="this.src='https://placehold.co/800x600/0d5c75/ffffff?text=Spotorno+-+Casa'"
+                                            class="visual-img" alt="Spotorno casa">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Spotorno • 1 / 5</span>
+                                            <h3>Casa e radici</h3>
+                                            <p>
+                                                Provengo da Spotorno, un paese di mare e meta turistica della Liguria, in provincia di
+                                                Savona. Questo luogo rappresenta
+                                                per me casa, un posto sperduto e felice, in cui custodisco ricordi magnifici, con i miei
+                                                amici e la mia famiglia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Sbarbaro.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/1b6ca8/ffffff?text=Spotorno+-+Sbarbaro'"
+                                            class="visual-img" alt="Spotorno Camillo Sbarbaro">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Spotorno • 2 / 5</span>
+                                            <h3>Un paesaggio dell’anima</h3>
+                                            <blockquote class="takeaway-box mb-0">
+                                                <p class="fst-italic mb-2 text-dark">
+                                                    “Spotorno, paesaggio dell’anima; cielo che a guardarlo si beve.”
+                                                </p>
+                                                <footer class="small text-muted">— Camillo Sbarbaro, <em>Trucioli</em>, 1920</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Campo_Siccardi.jpeg"
+                                            onerror="this.src='https://placehold.co/800x600/1b6ca8/ffffff?text=Spotorno+-+Territorio'"
+                                            class="visual-img" alt="Campo Siccardi Spotorno">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Spotorno • 3 / 5</span>
+                                            <h3>Le sfide di un piccolo paese</h3>
+                                            <p>
+                                                Crescendo però ho notato anche ciò che di Spotorno va migliorato e le sue necessità.
+                                                Purtroppo, in paesi piccoli come
+                                                questo ci sono pochi giovani e la maggior parte di loro si sposta per studiare fuori
+                                                proprio come me. Credo che questo
+                                                sia uno dei motivi per cui spesso le cose non cambiano facilmente e i problemi si
+                                                fossilizzano negli anni.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 4 -->
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Premiazione_Siccardi.JPEG"
+                                            onerror="this.src='https://placehold.co/800x600/1b6ca8/ffffff?text=Opera+Pia+Siccardi'"
+                                            class="visual-img" alt="Premiazione Opera Pia Siccardi">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Spotorno • 4 / 5</span>
+                                            <h3>Impegno e comunità: l’Opera Pia Siccardi</h3>
+                                            <p>
+                                                Anche a Spotorno ci sono enti che si occupano del territorio e del sociale, come l’Opera
+                                                Pia Siccardi. Questa
+                                                associazione ogni anno rilascia dei premi per le persone di Spotorno che raggiungono dei
+                                                risultati eccellenti in vari
+                                                ambiti per spronare le persone ad impegnarsi e arricchire una realtà di provincia come
+                                                la mia. Per otto anni consecutivi
+                                                sono riuscito ad ottenere questo premio per l’ambito dello studio. Questo tipo di
+                                                attività è essenziale secondo me
+                                                perché permette alle persone che fanno parte di una società di mettersi in gioco
+                                                attivamente per migliorarla.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 5 -->
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Spotorno2.jpeg"
+                                            onerror="this.src='https://placehold.co/800x600/1b6ca8/ffffff?text=Spotorno+-+Futuro'"
+                                            class="visual-img" alt="Spotorno panorama">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Spotorno • 5 / 5</span>
+                                            <h3>Restituire valore al territorio</h3>
+                                            <p>
+                                                Spotorno mi ha trasmesso molto il valore di cooperazione e per questo uno dei sogni che
+                                                tengo nel cassetto è quello di
+                                                accumulare esperienze e capacità, per poter restituire qualcosa al mio territorio e
+                                                valorizzarlo come merita.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselSpotorno" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselSpotorno" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselSpotorno" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselSpotorno" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselSpotorno" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselSpotorno" data-bs-slide="prev"
+                                    aria-label="Precedente">
+                                    <i class="bi bi-arrow-left"></i>
+                                </button>
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselSpotorno" data-bs-slide="next"
+                                    aria-label="Successivo">
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 1.2: SAVONA -->
+                <div class="tab-pane fade" id="pane-savona" role="tabpanel" aria-labelledby="tab-savona" tabindex="0">
+                    <div id="carouselSavona" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Cappella_Sistina.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/2a9d8f/ffffff?text=Savona+-+1'"
+                                            class="visual-img" alt="Savona">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Savona • 1 / 2</span>
+                                            <h3>Allargare gli orizzonti</h3>
+                                            <p>
+                                                Savona è la città in cui ho studiato per cinque anni e che ho vissuto appieno. In questo luogo ho fatto le mie prime
+                                                vere esperienze da adulto e ho arricchito il mio bagaglio culturale in maniera del tutto indipendente.
+                                                Il tempo trascorso qui mi ha stimolato nello scoprire altri ambienti e persone, studiare e conoscere nuovi punti di
+                                                vista.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Liceo_Grassi.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/264653/ffffff?text=Savona+-+2'"
+                                            class="visual-img" alt="Savona esperienze">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Savona • 2 / 2</span>
+                                            <h3>Il liceo</h3>
+                                            <p>
+                                                Savona ho ottenuto il mio diploma scientifico con indirizzo scienze applicate con votazione di 100/100esimi presso
+                                                l’istituto Orazio Grassi. L’esperienza del liceo è stata cruciale per me, perché mi ha permesso di avvicinarmi
+                                                concretamente al mondo dell’informatica e della scienza, senza tralasciare però le materie umanistiche, altrettanto
+                                                importanti per la mia formazione. Le persone che ho incontrato in questo ambiente mi hanno dato moltissimi spunti per migliorare sotto ogni punto di
+                                                vista, oltre a regalarmi bellissimi ricordi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselSavona" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselSavona" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselSavona"
+                                    data-bs-slide="prev" aria-label="Precedente"><i
+                                        class="bi bi-arrow-left"></i></button>
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselSavona"
+                                    data-bs-slide="next" aria-label="Successivo"><i
+                                        class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 1.3: TRENTO -->
+                <div class="tab-pane fade" id="pane-trento" role="tabpanel" aria-labelledby="tab-trento" tabindex="0">
+                    <div id="carouselTrento" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Trento.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/0d5c75/ffffff?text=Trento+-+Nuova+Casa'"
+                                            class="visual-img" alt="Trento">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Trento • 1 / 2</span>
+                                            <h3>Ricominciare da zero</h3>
+                                            <p>
+                                                Trento è la città dove ho vissuto e studiato negli ultimi tre anni. Nonostante questo luogo sia molto lontano
+                                                e completamente diverso dal mio paese, lo considero una seconda casa. Qui ho affrontato la sfida di ripartire da zero,
+                                                senza conoscere nessuno e senza sapere a cosa andavo incontro, ma con gli strumenti che ho accumulato negli anni e con
+                                                quelli che questa realtà fornisce. Il modello di questo territorio mi affascina molto e per questo voglio conoscerlo
+                                                meglio e cercare di contribuire al suo miglioramento.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Collegio_Clesio2.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/e06d53/ffffff?text=Trento+-+Clesio'"
+                                            class="visual-img" alt="Vivere in Trentino">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge">Trento • 2 / 2</span>
+                                            <h3>Il Collegio Clesio</h3>
+                                            <p>
+                                                Il Collegio Clesio è la realtà che maggiormente mi ha aiutato nella mia esperienza, permettendomi di non pesare sui miei
+                                                genitori e di studiare in una città nuova e distante. Il Collegio inoltre è un ambiente incredibilmente stimolante,
+                                                perché mi sprona nel cercare di ottenere il massimo da me stesso e mi permette di partecipare ad incontri con figure
+                                                autorevoli provenienti da diversi ambiti disciplinari. Apprezzo molto queste attività multidisciplinari perché sollecitano la
+                                                mia curiosità e arricchiscono il mio bagaglio culturale.
+                                                Infine, la cosa più preziosa che questo collegio mi ha dato sono i rapporti che ho stretto con le persone che vivono al
+                                                suo interno. Conoscere alunni così capaci e provenienti da luoghi e discipline differenti mi ha permesso di scoprire
+                                                nuovi punti di vista e di confrontarmi in maniera profonda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselTrento" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselTrento" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselTrento"
+                                    data-bs-slide="prev" aria-label="Precedente"><i
+                                        class="bi bi-arrow-left"></i></button>
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselTrento"
+                                    data-bs-slide="next" aria-label="Successivo"><i
+                                        class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="passioni" class="area-section">
+            <div class="area-header mb-3">
+                <span class="area-number accent-bg">02</span>
+                <div>
+                    <span class="area-kicker">Cosa mi appassiona</span>
+                    <h2 class="area-title">Passioni</h2>
+                </div>
+            </div>
+
+            <div class="nav nav-pills row g-2 g-md-3 mb-4 big-topic-tabs coral-tabs" id="passioniTab" role="tablist">
+                <div class="col-4">
+                    <button class="nav-link active w-100 big-tab-btn" id="tab-musica" data-bs-toggle="pill"
+                        data-bs-target="#pane-musica" type="button" role="tab" aria-controls="pane-musica"
+                        aria-selected="true">
+                        <i class="bi bi-music-note-beamed big-tab-icon"></i>
+                        <span class="big-tab-title">Musica</span>
+                        <span class="big-tab-sub d-none d-sm-block">Esprimersi e vita sociale</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="nav-link w-100 big-tab-btn" id="tab-basket" data-bs-toggle="pill"
+                        data-bs-target="#pane-basket" type="button" role="tab" aria-controls="pane-basket"
+                        aria-selected="false">
+                        <i class="bi bi-dribbble big-tab-icon"></i>
+                        <span class="big-tab-title">Basket</span>
+                        <span class="big-tab-sub d-none d-sm-block">Divertimento e gioco di squadra</span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="nav-link w-100 big-tab-btn" id="tab-arte" data-bs-toggle="pill"
+                        data-bs-target="#pane-arte" type="button" role="tab" aria-controls="pane-arte"
+                        aria-selected="false">
+                        <i class="bi bi-palette big-tab-icon"></i>
+                        <span class="big-tab-title">Arte</span>
+                        <span class="big-tab-sub d-none d-sm-block">Visione e cultura</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="passioniTabContent">
+
+                <!-- TAB 2.1: MUSICA -->
+                <div class="tab-pane fade show active" id="pane-musica" role="tabpanel" aria-labelledby="tab-musica"
+                    tabindex="0">
+                    <div id="carouselMusica" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/musica-1.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/e06d53/ffffff?text=Musica+-+1'"
+                                            class="visual-img" alt="Musica">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge badge-coral">Musica • 1 / 2</span>
+                                            <h3>Spotify e Chitarra</h3>
+                                            <p>
+                                                La musica è sempre stata una mia grande passione, infatti passo tutte le giornate ad ascoltarla. Nel tempo libero (cerco)
+                                                di suonare la chitarra perché credo che sia un mezzo di espressione potentissimo e perché mi diverte molto
+                                                imparare qualcosa di pratico.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <video class="visual-img" controls playsinline preload="metadata">
+                                            <source src="img/Poplar.mp4" type="video/mp4">
+                                            Il tuo browser non supporta la riproduzione di video.
+                                        </video>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge badge-coral">Musica • 2 / 2</span>
+                                            <h3>Musica dal vivo</h3>
+                                            <p>
+                                                A Trento, grazie alle numerose iniziative culturali sul territorio, sono riuscito a partecipare a
+                                                concerti e festival
+                                                come il Poplar che permettono di vivere la musica in prima persona. Queste occasioni, oltre ad
+                                                essere vere e proprie
+                                                iniezioni di cultura e intrattenimento, uniscono la comunità locale.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselMusica" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselMusica" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselMusica"
+                                    data-bs-slide="prev" aria-label="Precedente"><i
+                                        class="bi bi-arrow-left"></i></button>
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselMusica"
+                                    data-bs-slide="next" aria-label="Successivo"><i
+                                        class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2.2: BASKET -->
+                <div class="tab-pane fade" id="pane-basket" role="tabpanel" aria-labelledby="tab-basket" tabindex="0">
+                    <div id="carouselBasket" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Basket.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/e06d53/ffffff?text=Basket'"
+                                            class="visual-img" alt="Basket">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge badge-coral">Basket • 1 / 1</span>
+                                            <h3>Gioco di squadra e tattica</h3>
+                                            <p>
+                                                Il basket è uno sport che ha sempre fatto parte della mia vita e di cui sono stato sempre appassionato. È uno sport
+                                                molto rapido, di contatto e soprattutto di tattica. La pallacanestro è uno sport di squadra, e questo è l’aspetto che mi
+                                                piace di più; infatti, mi ha insegnato a collaborare con dei compagni per raggiungere un obiettivo comune e
+                                                facendo ognuno la propria parte, mettendosi a disposizione e sacrificandosi anche per gli altri.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselBasket" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2.3: ARTE -->
+                <div class="tab-pane fade" id="pane-arte" role="tabpanel" aria-labelledby="tab-arte" tabindex="0">
+                    <div id="carouselArte" class="carousel slide visual-carousel" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Tondo_doni.JPG"
+                                            onerror="this.src='https://placehold.co/800x600/2a9d8f/ffffff?text=Arte+-+1'"
+                                            class="visual-img" alt="Arte">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge badge-coral">Arte • 1 / 2</span>
+                                            <h3>Curiosità visiva e cultura</h3>
+                                            <p>
+                                                Un’altra mia grande passione è l’arte, che ho iniziato ad apprezzare grazie a mia madre, che è diplomata in belle arti.
+                                                Mi piace visitare musei, cattedrali e siti architettonici; credo infatti che sia fondamentale per una città avvicinare
+                                                più persone possibili a questi ambienti.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-md-6">
+                                        <img src="img/Daredevil.jpg"
+                                            onerror="this.src='https://placehold.co/800x600/e06d53/ffffff?text=Arte+-+2'"
+                                            class="visual-img" alt="Arte">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="visual-body">
+                                            <span class="slide-badge badge-coral">Arte • 2 / 2</span>
+                                            <h3>Fumetti e manga</h3>
+                                            <p>
+                                                Sono molto affascinato anche dai fumetti e dai manga giapponesi, che con i loro pannelli immersivi permettono di entrare
+                                                appieno nelle storie che raccontano. Spesso vengono trattate come un’arte di “serie B”, ma credo che abbiano contenuti
+                                                profondi e tecniche di disegno molto elaborate.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-footer-controls">
+                            <div class="carousel-indicators custom-indicators">
+                                <button type="button" data-bs-target="#carouselArte" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselArte" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselArte"
+                                    data-bs-slide="prev" aria-label="Precedente"><i
+                                        class="bi bi-arrow-left"></i></button>
+                                <button class="btn-carousel-nav" type="button" data-bs-target="#carouselArte"
+                                    data-bs-slide="next" aria-label="Successivo"><i
+                                        class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="lavoro" class="area-section">
+            <div class="area-header">
+                <span class="area-number">03</span>
+                <div>
+                    <span class="area-kicker">Esperienze sul campo</span>
+                    <h2 class="area-title">Lavoro</h2>
+                </div>
+            </div>
+
+            <div id="carouselLavoro" class="carousel slide editorial-carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <!-- Slide Lavoro 1 -->
+                    <div class="carousel-item active">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Hotel_mediterranee.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/0d5c75/ffffff?text=Lavoro+in+Albergo'"
+                                            alt="Lavoro in albergo">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge">Lavoro • 1 / 4</span>
+                                    <h3>Il lavoro in albergo</h3>
+                                    <p>
+                                        Il primo lavoro della mia vita è stato quello di cameriere in un albergo di Spotorno per un'intera stagione estiva. Sono
+                                        convinto che quest’esperienza mi abbia cambiato la vita, perché a diciotto anni ho imparato per la prima volta il vero
+                                        valore del lavoro. Inoltre, questo ambiente mi ha permesso di conoscere e collaborare con persone con storie, età e
+                                        problemi molto diversi dai miei, facendomi adottare una visione generale molto più ampia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Lavoro 2 -->
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Complete.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/1b6ca8/ffffff?text=DGS1'"
+                                            alt="DGS1">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge">Lavoro • 2 / 4</span>
+                                    <h3>Primo tirocinio in DGS</h3>
+                                    <p>
+                                        Dopo l’esperienza da cameriere mi sono voluto cimentare con un lavoro più vicino a quello che volevo fare nella vita. In
+                                        questo modo sono entrato in contatto con DGS, un’azienda con molte sedi, tra cui una a Savona. Il gruppo con cui ho
+                                        lavorato si chiama DGS Complete e si occupa di catene di montaggio per grandi aziende; quindi, si occupa di schedulare tutti i
+                                        passaggi dall’arrivo dei materiali alla spedizione dei prodotti.
+                                    </p>
+                                    <p>
+                                        Ho fatto un primo tirocinio prima di diplomarmi sull’addestramento di un Large Language Model (LLM) per ottenere
+                                        un’assistente vocale che aiutasse gli utenti a leggere il manuale d’uso del programma prodotto dall’azienda.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/lavoro-2.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/1b6ca8/ffffff?text=DGS2'"
+                                            alt="DGS2">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge">Lavoro • 3 / 4</span>
+                                    <h3>Secondo tirocinio in DGS</h3>
+                                    <p>
+                                        Il secondo tirocinio invece, si è basato sulla scrittura di un modello di schedulazione su misura per i per i clienti
+                                        dell’azienda, che permettesse di trasformare le consegne in problemi matematici risolvibili da un programma
+                                        specializzato. Il mio lavoro, in seguito, è stato sviluppato ed è attualmente utilizzato dall’azienda.
+                                    </p>
+                                    <p>
+                                        Questa esperienza lavorativa è stata davvero illuminante perché mi ha permesso di interfacciarmi con il mondo aziendale
+                                        e con tutte le sue dinamiche, oltre a darmi uno scorcio su quello che potrebbe essere il mio futuro. Le persone che ho
+                                        trovato, tra cui il mio capo mi hanno dato consigli inestimabili sia dal punto di vista tecnico ma soprattutto dal punto
+                                        di vista dell’approccio con cui porsi in questo ambiente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Malga_brigolina.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/1b6ca8/ffffff?text=Malga'"
+                                            alt="Malga">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge">Lavoro • 4 / 4</span>
+                                    <h3>Cameriere in malga</h3>
+                                    <p>
+                                        Durante gli studi, lavoro tramite un contratto a chiamata in una Malga vicina a Trento. Questa occupazione mi permette
+                                        in maniera molto flessibile di accumulare qualche risparmio per non pesare economicamente sui miei genitori e respirare
+                                        l’aria di montagna in mezzo agli animali. L’impiego in malga è stato un’opportunità per mettersi in gioco anche a Trento
+                                        e conoscere il territorio trentino al di fuori della città, stringendo legami con persone nate e cresciute qui.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-footer-controls">
+                    <div class="carousel-indicators custom-indicators">
+                        <button type="button" data-bs-target="#carouselLavoro" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselLavoro" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselLavoro" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselLavoro" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn-carousel-nav" type="button" data-bs-target="#carouselLavoro"
+                            data-bs-slide="prev" aria-label="Precedente"><i class="bi bi-arrow-left"></i></button>
+                        <button class="btn-carousel-nav" type="button" data-bs-target="#carouselLavoro"
+                            data-bs-slide="next" aria-label="Successivo"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="studio" class="area-section">
+            <div class="area-header">
+                <span class="area-number accent-bg">04</span>
+                <div>
+                    <span class="area-kicker">Metodo e formazione</span>
+                    <h2 class="area-title">Studio</h2>
+                </div>
+            </div>
+
+            <div id="carouselStudio" class="carousel slide editorial-carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <!-- Slide Studio 1 -->
+                    <div class="carousel-item active">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Usi.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/264653/ffffff?text=USI'"
+                                            alt="USI">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge badge-coral">Studio • 1 / 5</span>
+                                    <h3>Bachelor ministage USI</h3>
+                                    <p>
+                                        Durante l’ultimo anno di superiori ho partecipato ad un ministage presso l’Università della Svizzera Italiana per
+                                        conoscere l’università, lo stile di vita e il modo di lavorare in quel luogo. È stata la mia prima esperienza di studio
+                                        all’estero e credo sia stata molto formativa per me, soprattutto da un punto di vista umano.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Studio 2 -->
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Cern.avif"
+                                            onerror="this.src='https://placehold.co/500x550/2a9d8f/ffffff?text=Cern'"
+                                            alt="Cern">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge badge-coral">Studio • 2 / 5 </span>
+                                    <h3>Visita al Cern di Ginevra</h3>
+                                    <p>
+                                        Durante il quinto anno di liceo ho preso parte ad una visita guidata presso il CERN di Ginevra, uno dei centri di
+                                        ricerca più attrezzati e grandi al mondo. Questa visita ha cambiato completamente le mie prospettive, perché ho avuto la
+                                        fortuna di vedere macchinari enormi e all’avanguardia che hanno il solo scopo di ampliare anche solo di poco la
+                                        conoscenza del mondo che ci circonda. Quest’esperienza mi ha colpito in maniera profonda perché mi ha avvicinato molto
+                                        al mondo della ricerca e ha stimolato molto la mia curiosità in merito.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Studio 3 -->
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/100_progetti.jpg"
+                                            onerror="this.src='https://placehold.co/500x550/2a9d8f/ffffff?text=Tesi+o+Percorso'"
+                                            alt="Tesi o percorso di studi">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge badge-coral">Studio • 3 / 5 </span>
+                                    <h3>Cento progetti per Trento</h3>
+                                    <p>
+                                        Durante il mio percorso di studi a Trento, ho partecipato all’iniziativa “Cento progetti per Trento” e ritengo che sia
+                                        stata una delle sfide più formative che ho affrontato durante la triennale. È stato davvero soddisfacente utilizzare le
+                                        mie competenze per creare una Web App davvero funzionante con uno scopo ed un’idea precisa, ma allo stesso tempo è stato
+                                        davvero complicato. Ciò che questa esperienza mi ha insegnato è stata l’organizzazione di un lavoro complesso tramite
+                                        gli standard delle vere aziende, confrontarsi con i compagni per prendere decisioni, ma soprattutto pensare a idee
+                                        innovative, utili alle persone e che possano migliorare la qualità di vita nel territorio. Per la prima volta ho
+                                        ragionato seriamente su questi aspetti e credo che sia stato fondamentale per me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Studio 4 -->
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Laurea.png"
+                                            onerror="this.src='https://placehold.co/500x550/2a9d8f/ffffff?text=Laurea'"
+                                            alt="Laurea">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge badge-coral">Studio • 4 / 5 </span>
+                                    <h3>Laurea</h3>
+                                    <p>
+                                        La mia laurea triennale in Informatica a Trento è stato il coronamento di un percorso molto intenso e pieno di stimoli e
+                                        soddisfazioni. Sono molto contento di aver trascorso questi anni all’interno del collegio e di aver conseguito la laurea
+                                        con il massimo dei voti e la lode. Credo però che la cosa più importante di questo viaggio sia stata la voglia di
+                                        conoscere e scoprire con cui l’ho affrontato, infatti spero di poter continuare a mettermi alla prova allo stesso modo
+                                        in ambienti nuovi e situazioni sconosciute.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide Studio 5 -->
+                    <div class="carousel-item">
+                        <div class="editorial-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="editorial-img-frame">
+                                        <img src="img/Progetto_ricerca.png"
+                                            onerror="this.src='https://placehold.co/500x550/2a9d8f/ffffff?text=Progetto+di+ricerca'"
+                                            alt="Progetto di ricerca">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <span class="slide-badge badge-coral">Studio • 5 / 5 </span>
+                                    <h3>Progetto di ricerca</h3>
+                                    <p>
+                                        Il tirocinio curricolare che ho fatto durante il corso di laurea triennale si è basato su un lavoro di ricerca
+                                        nell’ambito della network science. Si tratta quindi di una branca dell’informatica che si occupa di dati organizzati
+                                        sotto forma di grafi. Questo tipo di dati è ricorrente in moltissime situazioni dalla biologia alla psicologia; perciò,
+                                        studiarlo può essere molto utile per analizzare situazioni reali con strumenti specifici. Nonostante la sua utilità,
+                                        questa area di ricerca è molto astratta e inesplorata, perciò è stata una vera e propria sfida condurre questa ricerca.
+                                        Insieme al mio relatore abbiamo deciso di proseguire il lavoro anche dopo la laurea per provare a pubblicare un articolo
+                                        su una rivista scientifica e sto continuando a lavorare per riuscirci.
+                                    </p>
+                                    <p>
+                                        Grazie a questa esperienza ho conosciuto il mondo della ricerca in prima persona e questo mi è stato molto utile per
+                                        capirne le difficoltà e gli aspetti positivi. Personalmente trovo molto soddisfacente lavorare con lo scopo di fare
+                                        scoperte utili ad una comunità ampia e non solo per guadagnare, ma allo stesso tempo trovo il lavoro del ricercatore
+                                        molto frustrante nei momenti in cui gli esperimenti falliscono o non raggiungono il risultato atteso. In ogni caso
+                                        voglio continuare il mio progetto per capire se è questa la strada che vorrò percorrere in futuro o meno.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="carousel-footer-controls">
+                    <div class="carousel-indicators custom-indicators">
+                        <button type="button" data-bs-target="#carouselStudio" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselStudio" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselStudio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselStudio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselStudio" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn-carousel-nav" type="button" data-bs-target="#carouselStudio"
+                            data-bs-slide="prev" aria-label="Precedente"><i class="bi bi-arrow-left"></i></button>
+                        <button class="btn-carousel-nav" type="button" data-bs-target="#carouselStudio"
+                            data-bs-slide="next" aria-label="Successivo"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="e-ora" class="future-section mt-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="display-6 fw-extrabold mb-3">E ora?</h2>
+                    <p class="mb-3">
+                        In questo momento sto studiando per ottenere la laurea magistrale in Computer Science presso l'università di Trento e continuo a lavorare per pubblicare un articolo scientifico.
+                        Date le esperienze variegate che ho fatto, vorrei mettermi in gioco nuovamente e scoprire cosa significa lavorare per un progetto che riguardi anche altre persone e che possa valorizzare ancora di più una realtà come il Trentino.
+                        Vorrei imparare il metodo di lavoro in questo ambiente osservando chi ha anni di esperienza in questo mondo e confrontarmi con chi come me non ne ha affatto, per poter aggiungere anche questo alle mie competenze e poterne usufruire in futuro.
+                        Ma soprattutto, sento la necessità di contribuire a restituire qualcosa ad una realtà che mi ha messo a disposizione tutto ciò di cui avevo bisogno per vivere al meglio in un ambiente ricco di cultura e fervore, a cui negli anni mi sono profondamente affezionato.
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="future-card">
+                        <h3 class="h5 fw-bold mb-3">Cosa metto a disposizione</h3>
+                        <ul class="future-list">
+                            <li>
+                                <i class="bi bi-cpu"></i>
+                                <div>
+                                    <strong>Competenza sul piano digitale</strong>
+                                    <span>Conoscere gli strumenti, i tempi tecnici e il potenziale dei prodotti digitali che possono essere utili nei lavori.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-people"></i>
+                                <div>
+                                    <strong>Capacità di lavorare in gruppo e in maniera organizzata</strong>
+                                    <span>
+                                        Tra le mie competenze tecniche rientra quella di saper organizzare e strutturare un progetto, affrontando imprevisti. 
+                                        Inoltre ho esperienza nel lavorare con gruppi di persone con competenze diverse dalle mie per raggiungere un obiettivo comune.
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-compass"></i>
+                                <div>
+                                    <strong>Prospettiva esterna ma consapevole</strong>
+                                    <span>L'entusiasmo di chi ha scelto Trento per studiare e vuole restituire valore al
+                                        territorio, ma che lo riesce a vedere con gli occhi di chi proveniene da una realtà molto diversa.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="py-4 border-top bg-white">
+        <div
+            class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 text-muted small">
+            <div>Progettato e scritto da <strong>Pietro Calvi</strong> • Candidatura Commissione Giovani Caritro</div>
+            <div class="d-flex gap-3">
+                <a href="pietrocalvi04@gmail.com" class="footer-link"><i class="bi bi-envelope me-1"></i>Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
